@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hiro Shen Portfolio - Fixed</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      background: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+      height: 100vh;
+      overflow: auto;
+    }
+    .image-wrapper {
+      position: relative;
+      width: 700px;
+      margin: auto;
+    }
+    .image-wrapper img.main {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .text-overlay {
+      position: absolute;
+      top: 50%;
+      left: -150px;
+      transform: translateY(-50%);
+      font-size: 14px;
+      color: #111;
+      white-space: nowrap;
+    }
+    .enter-overlay {
+      position: absolute;
+      bottom: 40px;
+      right: -90px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      color: #2563eb;
+      text-decoration: underline;
+    }
+    .enter-overlay:hover {
+      color: #60a5fa;
+    }
+    .enter-overlay img {
+      height: 20px;
+      width: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="image-wrapper">
+    <img src="Group1.jpg" alt="Main visual" class="main" />
+    <div class="text-overlay">Thank you for stumbling upon my world.</div>
+    <a href="#" class="enter-overlay">
+      Enter <img src="arrow.png" alt="arrow" />
+    </a>
+  </div>
+</body>
+</html>
