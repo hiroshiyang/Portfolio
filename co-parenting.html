@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Co-parenting</title>
+  <style>
+    body {
+      font-family: Times, serif;
+      margin: 0;
+      display: flex;
+      color: #222;
+      background: #ffffff;
+    }
+    nav {
+      width: 200px;
+      background: #ffffff;
+      height: 100vh;
+      padding: 40px 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    nav h1 {
+      font-size: 20px;
+      margin-bottom: 30px;
+      margin-top: 0;
+      padding-left: 0;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+    nav li {
+      margin-bottom: 10px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: #999;
+    }
+    main {
+      margin-left: 200px;
+      padding: 40px;
+      max-width: 1400px;
+    }
+    .title {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .main-image {
+      width: 100%;
+      max-width: 1400px;
+      margin-bottom: 20px;
+    }
+    .meta {
+      font-style: italic;
+      margin-bottom: 30px;
+    }
+    .text-block {
+      max-width: 1400px;
+      margin-bottom: 40px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+    .grid img {
+      width: 100%;
+      border-radius: 4px;
+    }
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+      nav {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 20px;
+      }
+      nav button {
+        display: block;
+        background: none;
+        border: 1px solid #ccc;
+        padding: 8px 12px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      nav ul {
+        display: none;
+      }
+      main {
+        margin-left: 0;
+        padding: 20px;
+      }
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+  <script>
+    function toggleMenu() {
+      const nav = document.querySelector('nav ul');
+      nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</head>
+<body>
+  <nav>
+    <h1 style="margin-top: 0; padding-left: 0;">Hiro Shen</h1>
+    <button onclick="toggleMenu()" style="display:none; margin-bottom: 20px;">☰ Menu</button>
+    <ul style="display:block;">
+      <li style="color: #999; font-weight: normal;">Works</li>
+      <li><a href="condemn-to-be-free.html">Condemn to Be Free</a></li>
+      <li><a href="co-parenting.html">Co-parenting</a></li>
+      <li style="margin-top: 30px;"><a href="#">Contact</a></li>
+      <li><a href="#">Bio</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <img src="assets/images/Umbrella-2.jpg" alt="Main work image" class="main-image" />
+    <div class="title">Co-parenting, 2025</div>
+    <div class="meta">umbrellas, adhesive tape, plastic wrap  1.5m x 1.5m x 1m</div>
+
+    <div class="text-block">
+      This piece is composed of several broken umbrellas, their frames exposed and interwoven, connecting with each other but unable to uphold their original protective form. The upright main structure stands like a witness holding a pose, while the surrounding umbrella frames resemble a fragmented network—no longer closed, no longer whole, yet still pulling at each other.
+      <br><br>
+      I use the "umbrella" as a metaphor for systems. When it functions properly, the umbrella is a protective structure; however, when it is torn apart, splayed open, and exposed, it also reveals the singularity, fragility, and even the oppressive nature behind that protection.
+    </div>
+
+    <div class="grid">
+      <img src="assets/images/Umbrella-1.jpg" alt="Detail 1" />
+    </div>
+
+    <div class="text-block">
+      This is a reflection on the "care structure." It is no longer upheld by a singular authority, but presents a failed collective attempt—similar to the contemporary societal imagination of shared parenting. When parental roles are no longer a binary of two genders, power begins to flow, distribute, and be negotiated across multiple dimensions.
+      <br><br>
+      The work is concerned with the failed vision of "shared shelter." When the structure originally meant to protect falls apart, do we have the ability to collectively uphold new possibilities? Or are we doomed to face a continuous cycle of collapse and reconstruction?
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Condemn to Be Free</title>
+  <style>
+    body {
+      font-family: Times, serif;
+      margin: 0;
+      display: flex;
+      color: #222;
+      background: #ffffff;
+    }
+    nav {
+      width: 200px;
+      background: #ffffff;
+      height: 100vh;
+      padding: 40px 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    nav h1 {
+      font-size: 20px;
+      margin-bottom: 30px;
+      margin-top: 0;
+      padding-left: 0;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+    nav li {
+      margin-bottom: 10px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: #999;
+    }
+    main {
+      margin-left: 200px;
+      padding: 40px;
+      max-width: 1400px;
+    }
+    .title {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .main-image {
+      width: 100%;
+      max-width: 1400px;
+      margin-bottom: 20px;
+    }
+    .meta {
+      font-style: italic;
+      margin-bottom: 30px;
+    }
+    .text-block {
+      max-width: 1400px;
+      margin-bottom: 40px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+    .grid img {
+      width: 100%;
+      border-radius: 4px;
+    }
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+      nav {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 20px;
+      }
+      nav button {
+        display: block;
+        background: none;
+        border: 1px solid #ccc;
+        padding: 8px 12px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      nav ul {
+        display: none;
+      }
+      main {
+        margin-left: 0;
+        padding: 20px;
+      }
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+  <script>
+    function toggleMenu() {
+      const nav = document.querySelector('nav ul');
+      nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</head>
+<body>
+  <nav>
+    <h1 style="margin-top: 0; padding-left: 0;">Hiro Shen</h1>
+    <button onclick="toggleMenu()" style="display:none; margin-bottom: 20px;">☰ Menu</button>
+    <ul style="display:block;">
+      <li style="color: #999; font-weight: normal;">Works</li>
+      <li><a href="condemn-to-be-free.html">Condemn to Be Free</a></li>
+      <li><a href="co-parenting.html">Co-parenting</a></li>
+      <li style="margin-top: 30px;"><a href="#">Contact</a></li>
+      <li><a href="#">Bio</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <img src="assets/images/14-1.jpg" alt="Main work image" class="main-image" />
+    <div class="title">Condemn to Be Free, 2025</div>
+    <div class="meta">Crank clay with glaze, 30 × 30 × 40 cm</div>
+
+    <div class="text-block">
+      This sculptural composition consists of four ceramic elements—two heavy, two pliable—arranged in a fragile, metastable balance. Over time, gravitational pull, subtle deformation, and microscopic shifts in surface tension cause the structure to collapse without warning. This work embodies what I call an “ultra-slow accident”: a moment of sudden failure caused by imperceptible tensions accumulated over time. The work resists fixed meaning, presenting instead a temporality that escapes immediate comprehension. It stages an encounter with delay, rupture, and the quiet agency of materials beyond human intention.
+    </div>
+
+    <div class="grid">
+      <img src="assets/images/Artboard-1-copy-1.jpg" alt="Detail 1" />
+      <img src="assets/images/Artboard-1-1.jpg" alt="Detail 2" />
+    </div>
+
+    <div class="text-block">
+      My research centers on what I term the “ultra-slow aesthetic”—not merely objects that evolve slowly, but states in which change accrues imperceptibly over a prolonged period yet erupts in an instant. I call these phenomena “ultra-slow accidents.” While the moment of a slice of bread catching fire appears abrupt, its occurrence is in fact the culmination of long-term factors—habitual routines, ambient humidity, toaster maintenance—built up over weeks or months rather than minutes.
+    </div>
+
+    <div class="grid">
+      <img src="assets/images/4-1.jpg" alt="Detail 3" />
+      <img src="assets/images/8-1.jpg" alt="Detail 4" />
+    </div>
+
+    <div class="text-block">
+      The temporal dynamics of ultra-slow accidents correspond directly to Sartre’s concept of existential anxiety (angoisse). Just as the sculpture’s hidden tensions accrue over time before erupting in a moment of structural failure, Sartrean anguish arises from an ongoing awareness of nothingness (néant) and the boundless contingency of freedom. In both cases, habitual perception obscures the gradual buildup of pressure until a singular event provokes a vertiginous confrontation with responsibility. By externalizing the mechanics of material collapse, Condemn to Be Free stages the precise instant we recognize the abyss beneath our choices and the full weight of our freedom.
+    </div>
+
+    <div class="grid">
+      <img src="assets/images/3-1.jpg" alt="Detail 5" />
+    </div>
+  </main>
+</body>
+</html>
